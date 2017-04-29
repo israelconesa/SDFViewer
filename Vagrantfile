@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
 
   # virtualbox provider
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "SDFViewerDevEnv"
+  vb.name = "SDFViewerDevEnv" 
 	vb.gui = "true"
   vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
 
